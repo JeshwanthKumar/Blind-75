@@ -17,7 +17,7 @@ class Solution:
         result = [] #Initialize an empty result array
 
         while q:    #Continue till the queue is empty
-            size = len(q)   #Initialize size as length of the queue
+            size = len(q)   #Initialize size as length of the queue, it means the loop should continue for size times
             temp = []   #Initialize a temporary array
             
             for _ in range(size):   #Continue till the size
@@ -31,4 +31,4 @@ class Solution:
                     q.append(node.right)
                     
             result.append(temp) #Append the temp array into the result array
-        return result   #Return the result 
+        return result   #Return the result, which will give the elements in level order
